@@ -1,0 +1,146 @@
+/* margin 0 padding 0 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body and root variables */
+
+body {
+  background: rgb(173, 131, 131);
+  background-image: linear-gradient(
+      31deg,
+      rgba(173, 131, 131, 0.4990371148459384) 0%,
+      rgba(190, 83, 104, 0.5998774509803921) 52%,
+      rgba(196, 38, 38, 0.700717787114846) 100%
+    ),
+    url(https://cdn.pixabay.com/photo/2017/10/10/21/53/dark-art-2838965_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Akshar", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --primaryFontSize: 28px;
+  --mainWidth: 800px;
+}
+form {
+  background: rgba(173, 131, 131, 0.4990371148459384);
+}
+
+/* positioning, padding, margins and resizing */
+
+main {
+  max-width: var(--mainWidth);
+  font-size: var(--primaryFontSize);
+  margin: 4rem auto;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+#description {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+form {
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+.small {
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+#title,
+#survey-form,
+#description {
+  margin: 2rem auto;
+}
+.form-block {
+  margin: 1rem auto;
+}
+.form-input {
+  display: block;
+  width: calc(100% - 1rem);
+  height: 2rem;
+  margin: 0.75rem auto 0.25rem auto;
+  padding: 0.2rem;
+  color: 241e1d;
+  border-radius: 0.25rem;
+  transition: background 2s ease-in 0.3s;
+}
+.selector {
+  width: calc(100%);
+  margin: 0.75rem auto 0.25rem auto;
+  height: 3rem;
+  border-radius: 0.25rem;
+  color: 241e1d;
+  transition: background 2s ease-in 0.3s;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.input-textarea {
+  min-height: 120px;
+  width: calc(100% - 1.5rem);
+  padding: 0.625rem;
+  resize: vertical;
+  margin: 0.5rem auto 0 auto;
+  color: 241e1d;
+  border-radius: 0.25rem;
+}
+
+/* animated submit button and form items */
+
+#submit {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  border: solid 3px;
+  margin: 1rem auto 1rem auto;
+  box-sizing: content-box;
+  background: rgba(173, 131, 131, 0.4990371148459384);
+  cursor: pointer;
+  transition: background 2s ease-in 0.3s;
+}
+
+#submit:hover {
+  background: #9e1b22;
+}
+
+/* media query*/
+
+@media screen and (max-width: 1000px) and (min-width: 606px) {
+  :root {
+    --primaryFontSize: 22px;
+    --mainWidth: 600px;
+  }
+}
+@media screen and (max-width: 606px) and (min-width: 406px) {
+  :root {
+    --primaryFontSize: 18px;
+    --mainWidth: 400px;
+  }
+}

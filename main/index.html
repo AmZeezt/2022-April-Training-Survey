@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">"For what will you sell your soul?"</h1>
+    <p id="description">What can you get for your soul? Almost everything as long as you are not afraid to leave your chance for eternal life behind! But first you need to compleate this short form.</p>
+  </header>
+  <form id="survey-form">
+
+    <div class="form-block">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required />
+    </div>
+
+    <div class="form-block">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-input" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-block">
+      <label id="number-label" for="number">Age<span class="small">(you need to be an adult)</span></label>
+      <input type="number" name="number" id="number" class="form-input" min="18" max="200" reqired />
+    </div>
+
+    <div class="form-block">
+      <p>Are you sure you want to form a contract?<span class="small">(there are no refunds)</span></p>
+      <label>
+        <input name="sureness" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+      <label>
+        <input name="sureness" value="maybe" type="radio" class="input-radio" />Maybe</label>
+    </div>
+
+    <div class="form-block">
+      <p>Length of contract</p>
+      <select id="dropdown" name="length" class="selector" required>
+        <option disabled selected value>How long will your contract be?</option>
+        <option value="0-4">0-4 years</option>
+        <option value="4-8">4-8 years</option>
+        <option value="8-12">8-12 years</option>
+        <option value="12+">12+ years</option>
+      </select>
+    </div>
+
+    <div class="form-block">
+      <p>Now you can choose from existing list of boons or/and write down your desires</p>
+      <label><input name="boon" value="strenght" type="checkbox" class="input-checkbox" />Super strenght</label>
+      <label><input name="boon" value="beauty" type="checkbox" class="input-checkbox" />Beauty</label>
+      <label><input name="boon" value="inelect" type="checkbox" class="input-checkbox" />Inelect</label>
+      <label><input name="boon" value="longevity" type="checkbox" class="input-checkbox" />Longevity</label>
+      <label><input name="boon" value="mind-reading" type="checkbox" class="input-checkbox" />Mind reading</label>
+      <label><input name="boon" value="telekinesis" type="checkbox" class="input-checkbox" />Telekinesis</label>
+      <label><input name="boon" value="speed" type="checkbox" class="input-checkbox" />Super speed</label>
+      <label><input name="boon" value="invisibility" type="checkbox" class="input-checkbox" />Invisibility</label>
+    </div>
+
+    <div class="form-block">
+      <p>Further desires</p>
+      <textarea id="desire" class="input-textarea" name="desire" placeholder="Enter your desires here... "></textarea>
+    </div>
+
+    <button type="submit" id="submit" class="submit-button">Sell your soul</button>
+
+  </form>
+</main>
+</body>
+</html>
